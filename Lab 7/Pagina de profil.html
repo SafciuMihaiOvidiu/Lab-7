@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function Viitor() {
+document.getElementById("nume").innerHTML = "Designer de jocuri la Ubisoft";
+document.getElementById("poza").src = "Saf 2.jpg";
+document.getElementById("poza").border = '16px';
+document.getElementById("poza").style.borderColor = 'blue';
+document.getElementById("poza").style.opacity = '0.5';
+document.body.style.backgroundColor = 'yellow';
+document.getElementById("email").style.color = 'gray';
+document.getElementById("asteptari").style.color = 'gray';
+document.getElementById("AnNastere").style.color = 'gray';
+document.getElementById("Realizari").innerHTML = "Realizari";
+document.getElementById("r1").innerHTML = "Am creat un nou gen de jocuri (genre of games)";
+document.getElementById("r2").innerHTML = "Am inceput sa creez jocuri dupa un an si jumatate de facultate";
+}
+function afisVarsta(){
+var azi = new Date;
+var varstaMea;
+var AnulNasterii = document.getElementById("AnNastere").innerHTML;
+var anCurent = azi.getFullYear();
+varstaMea = anCurent - parseInt (AnulNasterii);
+document.getElementById("AnNastere").innerHTML = varstaMea;
+}
+</script>
+<style>
+body {
+background-color: lime;
+}
+h1 {
+font-family: Lucida Console;
+font-size: 22px;
+color: aqua;
+text-align: center;
+}
+p {
+font-family: arial;
+font-size: 16px;
+color: red;
+text-align: center-right;
+}
+img {
+border-radius: 8px;
+opacity: 0.8;
+}
+table, th, td {
+border: 1px solid black;
+background-color: white;
+}
+li{
+font-family: Times New Roman;
+font-size: 16px;
+color: purple;
+background-color: black;
+}
+</style>
+<title>Safciu Mihai Ovidiu</title>
+</head>
+<body>
+<h1 id="nume">Safciu Mihai Ovidiu</h1>
+<img id="poza" src= "Saf.jpg" alt="Saf" width="200" height="200">
+<p id="email">safciu.mihay@gmail.com</p>
+<p id="asteptari"> Asteptarile mele cu privire la aceasta facultate sunt de a reusi sa obtin un job in domeniul IT <p>
+<p id="AnNastere" onmouseover="afisVarsta()"> 2001<p>
+<button type="button" onclick="Viitor()">Alta viata</button>
+<table style="width:100%">
+  <tr>
+  <th>Materi Favorite</th>
+  <th>Link</th>
+  </tr>
+  <tr>
+  <td>Analiza matematica</td>
+  <td><a href= https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3101.pdf>Analiza matematica</a></td>
+  </tr>
+  <tr>
+  <td>Algebră liniară</td>
+  <td><a href= https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3102.pdf>Algebră liniară</a><td>
+  </tr>
+  <tr>
+  <td>Componente și circuite electronice pasive</td>
+  <td><a href= https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf>Componente și circuite electronice pasive</a><td>
+  </tr>
+  <h1 id="Realizari">Hobby-uri</h1>
+  <ul>
+  <li id="r1">Gaming</li>
+  <li id="r2">Muzica</li>
+  </ul>
+</body>
+</html>
